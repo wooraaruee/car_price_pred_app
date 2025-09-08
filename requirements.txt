@@ -1,0 +1,13 @@
+pandas
+gunicorn
+scikit-learn
+numpy
+seaborn
+imbalanced-learn
+matplotlib
+flask
+regex
+joblib
+flask-cors
+streamlit==1.32.0
+catboost
