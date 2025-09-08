@@ -1,9 +1,14 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import os
+
+
+# path ของโมเดลแบบ relative (จากไฟล์นี้ไปที่ model.pkl)
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "model.pkl")
 
 # โหลดโมเดล
-with open("C:/Users/HP/Desktop/web_app/model.pkl", "rb") as f:
+with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
 st.title("🔮  Car Price Prediction")
