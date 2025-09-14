@@ -40,10 +40,10 @@ cat_feature_indices = [X_train.columns.get_loc(col) for col in cat_features]
     
 
 best_model = CatBoostRegressor(
-    iterations=400,
+    iterations=700,
     learning_rate=0.04,
-    depth=4,
-    l2_leaf_reg=16,
+    depth=3,
+    l2_leaf_reg=8,
     cat_features=cat_feature_indices,
     silent=True,
     random_state=42
